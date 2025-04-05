@@ -27,7 +27,7 @@ pipeline {
             steps {
                 sshagent(['server-ssh-credentials']) {
                     sh '''
-                    ssh root@192.168.234.161 '
+                    ssh root@192.168.234.162 '
                     docker pull siva671/nginx-app:latest &&
                     docker stop nginx-app || true &&
                     docker rm nginx-app || true &&
