@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/siva671/nginx-deployment.git'
+                git branch: 'main', url: 'https://github.com/siva671/nginx-webapp.git'
             }
         }
         
